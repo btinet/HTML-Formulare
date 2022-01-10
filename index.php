@@ -3,20 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Formlulare</title>
-    <style>
-        form > *{
-            display: block;
-        }
-        form > input {
-            margin-bottom: 1.5rem;
-        }
-        form > label {
-            margin-bottom: .5rem;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-<a href="http://<?=$_SERVER['HTTP_HOST'] ?>">Seite neu laden</a>
+<?php
+include ('menu.php');
+?>
 <h1>Formulare</h1>
 <p>POST-Formular</p>
 <form method="post">
