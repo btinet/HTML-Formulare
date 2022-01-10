@@ -3,6 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Formlulare</title>
+    <style>
+        form > *{
+            display: block;
+        }
+        form > input {
+            margin-bottom: 1.5rem;
+        }
+        form > label {
+            margin-bottom: .5rem;
+        }
+    </style>
 </head>
 <body>
 <a href="http://<?=$_SERVER['HTTP_HOST'] ?>">Seite neu laden</a>
@@ -24,6 +35,21 @@
 
     <label for="password_input">Passworteingabe</label>
     <input type="password" id="password_input" name="passwort">
+
+    <label>
+        <input type="checkbox" value="1" name="agb_ok">
+        Einverstanden?
+    </label>
+
+    <label>
+        Auswahl
+        <select name="choice">
+            <option selected>Bitte auswählen</option>
+            <option value="ice">Eis</option>
+            <option value="coffee">Kaffee</option>
+            <option value="bread">Brot</option>
+        </select>
+    </label>
 
     <button type="submit">Absenden</button>
 </form>
