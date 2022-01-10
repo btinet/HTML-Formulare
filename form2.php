@@ -5,11 +5,11 @@
     <title>Formlulare</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
+<body class="container">
 <?php
 include ('menu.php');
 ?>
-<div class="container">
+
     <h1>Surfresort-Buchung</h1>
     <form method="post">
         <label>
@@ -38,7 +38,6 @@ include ('menu.php');
         </label>
         <button type="submit">Absenden</button>
     </form>
-</div>
 
 
 <h2>Formularausgabe</h2>

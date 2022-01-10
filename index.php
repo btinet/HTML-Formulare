@@ -5,7 +5,7 @@
     <title>Formlulare</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
+<body class="container">
 <?php
 include ('menu.php');
 ?>
