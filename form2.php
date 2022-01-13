@@ -22,7 +22,7 @@ class Form
         $this->setAction($action);
     }
 
-    public function addInputField($label, $name,$type,array $attributes = []):void
+    public function addInput($label, $name,$type,array $attributes = []):void
     {
         $formRow = "<input type='{$type}' name='{$name}'";
         if($attributes)
@@ -134,16 +134,16 @@ $formItems = [
     <?php
 
     $form = new Form('post');
-    $form->addInputField('Vorname','firstname','text',[
+    $form->addInput('Vorname','firstname','text',[
             'required' => 'required'
     ]);
-    $form->addInputField('Nachname','firstname','text');
-    $form->addInputField('Passwort','password','password');
-    $form->addInputField('Straße und Hausnummer','address','text');
-    $form->addInputField('Postleitzahl','plz','text');
-    $form->addInputField('Ort','city','text');
-    $form->addInputField('Anreise','arrival','date');
-    $form->addInputField('Abreise','departure','date');
+    $form->addInput('Nachname','firstname','text');
+    $form->addInput('Passwort','password','password');
+    $form->addInput('Straße und Hausnummer','address','text');
+    $form->addInput('Postleitzahl','plz','text');
+    $form->addInput('Ort','city','text');
+    $form->addInput('Anreise','arrival','date');
+    $form->addInput('Abreise','departure','date');
     $form->addButton('Absenden','submit','submit');
     $form->render();
 
