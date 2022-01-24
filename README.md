@@ -8,7 +8,8 @@
    2. [Labels](#labels)
       1. [Verschachteltes Label-Input-Gefüge](#verschachteltes-label-input-gefge)
       2. [Zuordnung durch IDs](#zuordnung-durch-ids)
-4. [Aufgabe aus dem Unterricht](form2.php)
+4. Button-tag
+5. [Aufgabe aus dem Unterricht](form2.php)
 
 ## To do
 Ein PHP-Interface für Forms erstellen, um Formulare schnell und einfach zu generieren.
@@ -81,3 +82,15 @@ findet durch ``for="name der ID"`` und ``id="name der ID"`` statt.
 <label for="vorname">Vorname</label>
 <input id="vorname" name="vorname">
 ````
+
+## Button Tag
+Buttons dienen dazu, ein Formular abzusenden. Sie können aber auch verwendet werden,
+um das Formular zurückzusetzen
+````html
+<button type="submit">Absenden</button>
+````
+
+### Button Attribute
+| Attribut | Wert                      | Funktion                                         |
+|----------|---------------------------|--------------------------------------------------|
+| type     | button, submit oder reset | Teilt dem Interpreter die Aktion des Buttons mit |
